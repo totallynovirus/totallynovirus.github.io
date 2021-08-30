@@ -22,6 +22,11 @@ button {
 <body>
 <center><h1 id="progressBar" class="counter">...</h1></center><button onclick="payload()" id="lol">skip lol</button>
 <script>
+function sleep(delay) {
+    var start = new Date().getTime();
+    while (new Date().getTime() < start + delay);
+}
+
 function payload() {
 	document.getElementById("lol").innerHTML = "YOLO!!!";
 	document.getElementById("progressBar").innerHTML = "YOLO!!!";
@@ -37,6 +42,7 @@ var downloadTimer = setInterval(function(){
     	windows[javascriptsux].moveTo(Math.floor(Math.random() * parseInt(screen.width)), Math.floor(Math.random() * parseInt(screen.height)));
     	windows[javascriptsux].focus();
         javascriptsux++;
+        sleep(100);
     }
     clearInterval(downloadTimer);
   }
