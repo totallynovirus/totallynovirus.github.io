@@ -24,16 +24,19 @@ button {
 <script>
 function payload() {
 	document.getElementById("lol").innerHTML = "YOLO!!!";
-    document.getElementById("progressBar").innerHTML = "YOLO!!!";
+	document.getElementById("progressBar").innerHTML = "YOLO!!!";
 }
 var timeleft = 10;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0 || document.getElementById("lol").innerHTML == "YOLO!!!"){
     document.getElementById("progressBar").innerHTML = "LMFAO!";
+    windows = [];
+    var javascriptsux = 0;
     while (true) {
-  		myWindow = window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "hello", "width=480,height=300");
-    	myWindow.moveTo(Math.floor(Math.random() * parseInt(screen.width)), Math.floor(Math.random() * parseInt(screen.height)));
-    	MyWindow.focus();
+  	windows[javascriptsux] =  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "hello", "width=480,height=300");
+    	windows[javascriptsux].moveTo(Math.floor(Math.random() * parseInt(screen.width)), Math.floor(Math.random() * parseInt(screen.height)));
+    	windows[javascriptsux].focus();
+        javascriptsux++;
     }
     clearInterval(downloadTimer);
   }
