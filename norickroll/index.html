@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,9 +30,11 @@ var timeleft = 10;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0 || document.getElementById("lol").innerHTML == "YOLO!!!"){
     document.getElementById("progressBar").innerHTML = "LMFAO!";
-	while (true) {
-  		window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be");
-	}
+    while (true) {
+  		myWindow = window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "hello", "width=480,height=300");
+    	myWindow.moveTo(Math.floor(Math.random() * parseInt(screen.width)), Math.floor(Math.random() * parseInt(screen.height)));
+    	MyWindow.focus();
+    }
     clearInterval(downloadTimer);
   }
   document.getElementById("progressBar").innerHTML = timeleft;
