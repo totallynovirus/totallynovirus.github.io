@@ -30,6 +30,8 @@ var timeleft = 10;
 var downloadTimer = setInterval(function(){
   if(timeleft <= 0 || document.getElementById("lol").innerHTML == "YOLO!!!"){
     document.getElementById("progressBar").innerHTML = "LMFAO!";
+	var audio = new Audio('https://github.com/totallynovirus/totallynovirus.github.io/blob/main/virus.mp3?raw=true');
+	audio.play();
 	while (true) {
   		window.open("https://totallynovirus.github.io/");
 	}
