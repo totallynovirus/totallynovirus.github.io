@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>OMAGAD NO VIRUS!!!11</title>
+<style>
+.counter {
+    position: relative;
+    top: 20px;
+    left: center;
+	line-height: 0px;
+	font-family: Arial;
+    font-size: 150px;
+    color: red;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+button {
+    position: absolute;
+	top: 20px;
+}
+</style>
+</head>
+<body>
+<center><h1 id="progressBar" class="counter">...</h1></center><button onclick="payload()" id="lol">skip lol</button>
+<script>
+function payload() {
+	document.getElementById("lol").innerHTML = "YOLO!!!";
+    document.getElementById("progressBar").innerHTML = "YOLO!!!";
+}
+var timeleft = 10;
+var downloadTimer = setInterval(function(){
+  if(timeleft <= 0 || document.getElementById("lol").innerHTML == "YOLO!!!"){
+    document.getElementById("progressBar").innerHTML = "LMFAO!";
+	while (true) {
+  		window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be");
+	}
+    clearInterval(downloadTimer);
+  }
+  document.getElementById("progressBar").innerHTML = timeleft;
+  timeleft -= 1;
+}, 1000);
+
+</script>
+</body>
+
+</html>
