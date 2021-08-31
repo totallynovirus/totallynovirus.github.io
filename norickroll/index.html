@@ -37,11 +37,10 @@ var downloadTimer = setInterval(function(){
     document.getElementById("progressBar").innerHTML = "LMFAO!";
     windows = [];
     var javascriptsux = 0;
+	windows[javascriptsux] =  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "hello", "width=480,height=300");
     while (true) {
-  	windows[javascriptsux] =  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "hello", "width=480,height=300");
     	windows[javascriptsux].moveTo(Math.floor(Math.random() * parseInt(screen.width)), Math.floor(Math.random() * parseInt(screen.height)));
     	windows[javascriptsux].focus();
-        javascriptsux++;
         sleep(100);
     }
     clearInterval(downloadTimer);
